@@ -40,13 +40,17 @@ public class Main {
             System.out.println("Address: " + address);
             System.out.println("Number of Course: " + numCourse);
         }
-
+        public void Check() {
+            if (numCourse > 5) {
+                System.out.println("Error!!");
+            }
+        }
     }
 
     public static void main(String[] args) {
 
-        student stu1 = new student("Sunny", "Phnom Penh", 5);
+        student stu1 = new student("Sunny", "Phnom Penh", 7);
         stu1.ShowDetail();
-
+        stu1.Check();
     }
 }
